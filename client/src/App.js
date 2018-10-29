@@ -71,9 +71,7 @@ class App extends Component {
     const image = (url, index) => (
       <img alt="" className="photo" key={`image-${index} }`} src={url} />
     );
-
     const images = this.state.images.map((e, i) => image(e.secure_url, i));
-
     return (
       <div className="App">
         <h1 className="App-title">Live Photo Feed</h1>
